@@ -104,6 +104,46 @@ REPL is a tool in Scala to evaluate expressions. In interactive mode, the REPL r
 scalac Hello.scala #compile the code
 scala Hello #run the compiled code
 ```
+#### 23. Explain the concept of currying in Scala.
+Currying is the process of converting a function with multiple arguments into a sequence of functions that take one argument. Each function returns another function that consumes the following argument.
+
+#### 24. What is the difference between ‘apply’ and ‘unapply’ methods in Scala?
+apply function is the method called when we treat an object like a function.
+```Scala
+object Person {
+  def apply(name: String, age: Int) = new Person(name, age)
+}
+val p = Person("Alice",25)
+```
+unapply function is used in pattern matching. It takes an object and extract values from it.
+```Scala
+object PersonExtractor{
+    def unapply(p:Person):Option[(String,Int)] = 
+        Some((p.name,p.age))
+}
+
+p match{
+    case PersonExtractor(name,age)=> println(s"name is $age")
+}
+```
+
+#### 25. How do you define default parameter values in a Scala function?
+```
+def functionName(arg1:Type = defaultValue):ReturnType = {
+    ...
+}
+```
+
+#### 26. Can you explain the concept of type inference in Scala?
+The compiler can automatically figure out types because Scala is statically typed.
+
+### 27. What are some of the benefits of using Scala over Java?
+- Less boilerplate, more concise and simple to develop
+- Scala supports functional programming
+- Scala has interoperability with Java:
+    - Scala runs on JVM
+    - It can directly use Java libraries
+
 ### Intermediate
 ---
 ## MCQ
