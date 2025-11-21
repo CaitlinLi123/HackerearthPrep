@@ -1,6 +1,5 @@
 # Non coding questions
 ## Interview Prep questions
-### Freshers
 #### 1. Can you explain what Scala is and why it’s used?
 A: Scala is a multi-paradigm programming language. It is used because 
 - It supports both OOP and functional programming. 
@@ -143,9 +142,41 @@ The compiler can automatically figure out types because Scala is statically type
 - Scala has interoperability with Java:
     - Scala runs on JVM
     - It can directly use Java libraries
+#### 28. What does immutable mean in the context of Scala collections?
+Immutable in Scala collections means once a collection is created, it cannot be changed. No elements can be added, removed or updated.
 
-<!-- ### Intermediate
---- -->
+#### 29. Explain what you know about string interpolation in Scala.
+String interpolation means embedding variables or expressions directly into a string literal.
+In Scala, we can perform string interpolation as follows:
+```Scala
+s"${var1} other string content here"
+```
+#### 30. What does it mean for a function to be a 'first-class citizen' in Scala?
+Functions are treated like any other value in the language. We can assign them to variables, pass around as arguments, return by other functions and so on.
+
+#### 31. How would you create a simple class with a constructor in Scala?
+```Scala
+class Person(var firstname:String, var lastname:String)
+```
+
+#### 32. Explain what you know about the concept of immutability and how Scala supports it.
+Immutability means once a value or object is created, it cannot be modified. 
+Scala supports them by:
+- using `val` keyword to define immutable values or objects
+- support immutable collections
+- case classes are immutable by default by design
+
+#### 33. What are the basic building blocks of a simple Scala application?
+A simple Scala application has the following basic building blocks:
+- objects
+- classes
+- methods
+- packages
+- expressions
+
+#### 34. How can you add extra behavior (methods) to a class after it's been defined in Scala, and what is this concept called?
+We can realise it by extending the class and perform method overriding.
+
 ## MCQ
 #### Q1. Scala bytecode can run on top of Java VM. What is the fundamental difference between Java object.clone() and Scala object.copy()?
 - [ ] One is a Java object, the other is a Scala object.
