@@ -144,8 +144,8 @@ The compiler can automatically figure out types because Scala is statically type
     - Scala runs on JVM
     - It can directly use Java libraries
 
-### Intermediate
----
+<!-- ### Intermediate
+--- -->
 ## MCQ
 #### Q1. Scala bytecode can run on top of Java VM. What is the fundamental difference between Java object.clone() and Scala object.copy()?
 - [ ] One is a Java object, the other is a Scala object.
